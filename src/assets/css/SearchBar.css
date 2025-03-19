@@ -1,0 +1,434 @@
+/* searchbar.css */
+
+/* Advanced Search Results Styling */
+.search-results {
+  width: 770px;
+  margin: 2rem auto 0 auto;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  padding: 1.2rem 1.5rem;
+}
+
+.search-results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--input-border);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background-color: var(--stat-bg);
+  border-radius: 8px;
+  margin: 0 -0.5rem;
+  padding: 1rem 0.5rem;
+}
+
+.search-result-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--button-bg);
+  object-fit: cover;
+}
+
+.search-result-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.search-result-username-btn {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--link);
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.search-result-username-btn:hover:not(:disabled) {
+  text-decoration: underline;
+  color: var(--button-bg);
+}
+
+.search-result-username-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.search-result-id {
+  font-size: 0.98rem;
+  color: var(--icon-secondary);
+  margin: 0.1rem 0;
+}
+
+.search-result-github-link {
+  font-size: 0.9rem;
+  color: var(--icon-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.search-result-github-link:hover {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.search-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.search-pagination-btn {
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--text);
+  border: 1.5px solid var(--input-border);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-pagination-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.search-pagination-btn:not(:disabled):hover {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+.search-pagination-info {
+  font-size: 1rem;
+  color: var(--icon-secondary);
+}
+/* Center the advanced search bar */
+.searchbar-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.searchbar-advanced-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 770px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  padding: 1.2rem 1.5rem;
+}
+
+.searchbar-advanced-form input {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.searchbar-advanced-form input:focus {
+  border: 1.5px solid var(--button-bg);
+}
+.searchbar-advanced-form input[type="number"] {
+  max-width: 120px;
+}
+.searchbar-advanced-form button {
+  padding: 0.75rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.searchbar-advanced-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.searchbar-advanced-form button:hover:not(:disabled) {
+  background: #146ace;
+}
+
+@media (min-width: 720px) {
+  .searchbar-advanced-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* Custom Number Input with Icons */
+.custom-number-input {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--input-bg);
+  border: 1.5px solid var(--input-border);
+  border-radius: 8px;
+  padding: 0 0.5rem;
+  max-width: 140px;
+}
+
+.custom-number-input input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 32px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--text);
+  padding: 0.6rem 0;
+}
+
+.custom-number-input input::-webkit-outer-spin-button,
+.custom-number-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-btn {
+  background: transparent !important;
+  border: none;
+  padding: 0.6rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--number-btn-color) !important;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.number-btn:hover {
+  color: var(--stat-value) !important;
+}
+
+/* Mobile Responsive Styles for SearchBar */
+@media (max-width: 768px) {
+
+  .header h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .searchbar-center {
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .searchbar-advanced-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    gap: 0.75rem;
+  }
+
+  .searchbar-advanced-form input {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .searchbar-advanced-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .custom-number-input {
+    max-width: 120px;
+    width: 100%;
+  }
+
+  .custom-number-input input[type="number"] {
+    width: 28px;
+    font-size: 1rem;
+  }
+
+  /* Search results mobile */
+  .search-results {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .search-result-item {
+    gap: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  .search-result-item:hover {
+    margin: 0 -0.25rem;
+    padding: 0.75rem 0.25rem;
+  }
+
+  .search-result-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search-result-username-btn {
+    font-size: 1rem;
+  }
+
+  .search-result-id {
+    font-size: 0.9rem;
+  }
+
+  .search-result-github-link {
+    font-size: 0.85rem;
+  }
+
+  .search-pagination {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .search-pagination-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .search-pagination-info {
+    font-size: 0.95rem;
+    order: 0;
+  }
+}
+
+/* Extra small screens for SearchBar */
+@media (max-width: 480px) {
+
+    .header h1{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .theme-toggle span{
+    font-size: 1rem;
+  }
+
+  .searchbar-center {
+    padding: 0 0.25rem;
+  }
+
+  .searchbar-advanced-form {
+    padding: 0.75rem;
+    gap: 0.6rem;
+  }
+
+  .searchbar-advanced-form input {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .searchbar-advanced-form button {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  .custom-number-input {
+    max-width: 100px;
+  }
+
+  .custom-number-input input[type="number"] {
+    width: 24px;
+    font-size: 0.95rem;
+  }
+
+  .search-results {
+    padding: 0.75rem;
+  }
+
+  .search-result-item {
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+  }
+
+  .search-result-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .search-result-username-btn {
+    font-size: 0.95rem;
+  }
+
+  .search-result-id {
+    font-size: 0.85rem;
+  }
+
+  .search-result-github-link {
+    font-size: 0.8rem;
+  }
+
+  .search-pagination-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .search-pagination-info {
+    font-size: 0.9rem;
+  }
+
+  .results-header h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Force responsive behavior on very small screens */
+@media (max-width: 360px) {
+  .searchbar-advanced-form {
+    padding: 0.5rem;
+  }
+  
+  .search-results {
+    padding: 0.5rem;
+  }
+  
+  .search-result-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .search-result-info {
+    width: 100%;
+  }
+}
