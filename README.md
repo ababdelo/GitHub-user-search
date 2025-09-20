@@ -21,11 +21,11 @@ A modern, responsive React Web Application for searching and discovering GitHub 
 
 | Mobile Dark Theme | Mobile Light Theme | Mobile Dark Theme |
 |:-----------------:|:------------------:|:------------------:|
-| <img src="./public/img/01-search-results-mobile-dark.webp" alt="Mobile search results - dark theme" width="250"> | <img src="./public/img/07-user-profile-mobile-light.webp" alt="Mobile user profile - light theme" width="250"> | <img src="./public/img/03-loading-state-mobile-dark.webp" alt="Loading state - mobile dark theme" width="250"> |
+| <img src="./public/preview/01-search-results-mobile-dark.webp" alt="Mobile search results - dark theme" width="250"> | <img src="./public/preview/07-user-profile-mobile-light.webp" alt="Mobile user profile - light theme" width="250"> | <img src="./public/preview/03-loading-state-mobile-dark.webp" alt="Loading state - mobile dark theme" width="250"> |
 
 | Tablet Light Theme | Tablet Dark Theme |
 |:------------------:|:-----------------:|
-| <img src="./public/img/02-search-results-tablet-light.webp" alt="Tablet search results - light theme" width="400"> | <img src="./public/img/06-user-profile-tablet-dark.webp" alt="Tablet user profile - dark theme" width="400"> |
+| <img src="./public/preview/02-search-results-tablet-light.webp" alt="Tablet search results - light theme" width="400"> | <img src="./public/preview/06-user-profile-tablet-dark.webp" alt="Tablet user profile - dark theme" width="400"> |
 
 </div>
 
@@ -35,7 +35,7 @@ A modern, responsive React Web Application for searching and discovering GitHub 
 
 | Server Error | No Results Found |
 |:-------------:|:----------------:|
-| <img src="./public/img/05-error-state-desktop.webp" alt="Error state - desktop" width="500"> | <img src="./public/img/04-no-results-desktop.webp" alt="No results state - desktop" width="400"> |
+| <img src="./public/preview/05-error-state-desktop.webp" alt="Error state - desktop" width="500"> | <img src="./public/preview/04-no-results-desktop.webp" alt="No results state - desktop" width="400"> |
 
 </div>
 
