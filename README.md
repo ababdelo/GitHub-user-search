@@ -48,7 +48,7 @@ A modern, responsive React Web Application for searching and discovering GitHub 
 - **Lucide React** - Beautiful icon library
 
 ## 🌐 Live Demo
-**Try it now:** [GitHub User Search](https://ababdelo.github.io/GitHub-user-search/)
+**Try it now:** [GitHub User Search](https://ababdelo.github.io/Github-user-search/)
 
 ## 🛠️ Local Development
 Want to run it locally or contribute? Follow the installation steps below:
