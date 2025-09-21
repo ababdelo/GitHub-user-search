@@ -2,6 +2,10 @@
 const GITHUB_API_KEY = import.meta.env.VITE_APP_GITHUB_API_KEY;
 const API_BASE_URL = 'https://api.github.com';
 
+// Debug: Log API key status (remove in production)
+console.log('API Key exists:', !!GITHUB_API_KEY);
+console.log('API Key length:', GITHUB_API_KEY?.length || 0);
+
 // Custom error class for better error handling
 class GitHubAPIError extends Error {
   constructor(message, type, status = null) {

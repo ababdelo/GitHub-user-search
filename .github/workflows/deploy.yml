@@ -36,7 +36,10 @@ jobs:
       run: npm ci
 
     - name: Build with API key
-      run: npm run build
+      run: |
+        echo "API Key exists: $([[ -n "$VITE_APP_GITHUB_API_KEY" ]] && echo "YES" || echo "NO")"
+        echo "API Key length: ${#VITE_APP_GITHUB_API_KEY}"
+        npm run build
       env:
         VITE_APP_GITHUB_API_KEY: ${{ secrets.VITE_APP_GITHUB_API_KEY }}
 
